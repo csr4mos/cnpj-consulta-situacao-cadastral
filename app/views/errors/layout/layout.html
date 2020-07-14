@@ -1,0 +1,41 @@
+<html lang="{{@LANGUAGE}}">
+	<head>
+		<meta charset="{{@ENCODING}}">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="{{@metadescription}}">
+		<meta name="keywords" content="{{@metakeywords}}">
+		<meta name="author" content="{{@PACKAGE}} - {{@VERSION}}">
+		<!--
+		<meta name="csrf-token" content="CTR+HG8BGx01Jjw9QAIPAhRiUhAGJgAAYcKpYCbOLqwvpkCdL++DVQ==">
+		-->
+		<title><check if="{{ @pageTitle != '' }}"><true>{{@pageTitle}} | {{@nameApp}}</true> <false>{{@nameApp}} &ndash; {{@tagLine}}</false></check></title>
+		<link rel="icon" href="{{@urlCDN}}front/img/brand/favicon.png" type="image/png"><!-- Favicon -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet"><!--Open Sans Font [ OPTIONAL ] -->
+		<link href="{{@urlCDN}}dashboard/css/bootstrap.min.css" rel="stylesheet"><!--Bootstrap Stylesheet [ REQUIRED ]-->
+		<link href="{{@urlCDN}}dashboard/css/genezzis-admin.min.css" rel="stylesheet"><!--genezzis-admin Stylesheet [ REQUIRED ]-->
+		<link href="{{@urlCDN}}dashboard/css/demo/genezzis-admin-demo.min.css" rel="stylesheet"><!--Demo [ DEMONSTRATION ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+		<link href="{{@urlCDN}}dashboard/plugins/switchery/switchery.min.css" rel="stylesheet"><!--Switchery [ OPTIONAL ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet"><!--Bootstrap Select [ OPTIONAL ]-->
+		<link href="{{@urlCDN}}dashboard/css/demo/genezzis-admin-demo.min.css" rel="stylesheet"><!--Demo [ DEMONSTRATION ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet"><!--Bootstrap Select [ OPTIONAL ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet"><!--Bootstrap Tags Input [ OPTIONAL ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/chosen/chosen.min.css" rel="stylesheet"><!--Chosen [ OPTIONAL ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"><!--noUiSlider [ OPTIONAL ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/noUiSlider/jquery.nouislider.pips.min.css" rel="stylesheet"><!--noUiSlider [ OPTIONAL ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet"><!--Bootstrap Timepicker [ OPTIONAL ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet"><!--Bootstrap Datepicker [ OPTIONAL ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/dropzone/dropzone.css" rel="stylesheet"><!--Dropzone [ OPTIONAL ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/summernote/summernote.min.css" rel="stylesheet"><!--Summernote [ OPTIONAL ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/fooTable/css/footable.core.css" rel="stylesheet"><!--FooTable [ OPTIONAL ]-->
+		<link href="{{@urlCDN}}dashboard/plugins/pace/pace.min.css" rel="stylesheet"><!--Page Load Progress Bar [ OPTIONAL ]-->
+		<script src="{{@urlCDN}}dashboard/plugins/pace/pace.min.js"></script><!--Page Load Progress Bar [ OPTIONAL ]-->
+	</head>
+	<body class="hold-transition skin-blue layout-top-nav fixed">
+		<div class="wrapper">
+			<div class="content-wrapper">
+				<include href="{{ @view }}" />
+			</div><!--/.content-wrapper-->
+		</div><!--/.wrapper-->
+	</body><!--/.body-->
+</html><!--/.html-->

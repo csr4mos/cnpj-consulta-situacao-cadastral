@@ -1,0 +1,325 @@
+        <header class="header-account-page bg-primary d-flex align-items-end">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-lg-12">
+                        <!-- Salute + Small stats -->
+                        <div class="row align-items-center mb-4">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <span class="h2 mb-0 text-white d-block">{{@nome_fantasia}}</span>
+                                <span class="text-light">{{@razao_social}}</span>
+                            </div>
+                            
+                        </div>
+                        <!-- Account navigation -->
+                        <div class="d-flex">
+                            <a href="account-profile-public.html" class="btn btn-icon btn-group-nav shadow btn-secondary">
+                                <span class="btn-inner--icon"><i class="far fa-file-alt"></i></span>
+                                <span class="btn-inner--text d-none d-md-inline-block">Situação Cadastral</span>
+                            </a>
+                            <div class="btn-group btn-group-nav shadow ml-auto" role="group" aria-label="Basic example">
+                                <div class="btn-group" role="group">
+                                    <button id="btn-group-boards" type="button" class="btn btn-secondary btn-icon dropdown-toggle" data-toggle="dropdown" data-offset="0,8" aria-haspopup="true" aria-expanded="false">
+                                        <span class="btn-inner--icon"><i class="far fa-chart-line"></i></span>
+                                        <span class="btn-inner--text d-none d-sm-inline-block">Download</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" aria-labelledby="btn-group-boards">
+                                        <a class="dropdown-item" href="account-overview.html">Overview</a>
+                                        <a class="dropdown-item" href="account-projects.html">Projects</a>
+                                        <a class="dropdown-item" href="account-tasks.html">Tasks</a>
+                                        <a class="dropdown-item" href="account-connections.html">Connections</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group" role="group">
+                                    <button id="btn-group-settings" type="button" class="btn btn-secondary btn-icon dropdown-toggle" data-toggle="dropdown" data-offset="0,8" aria-haspopup="true" aria-expanded="false">
+                                        <span class="btn-inner--icon"><i class="far fa-sliders-h"></i></span>
+                                        <span class="btn-inner--text d-none d-sm-inline-block">Compartilhar</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" aria-labelledby="btn-group-settings">
+                                        <a class="dropdown-item" href="account-profile.html">Profile</a>
+                                        <a class="dropdown-item" href="account-settings.html">Settings</a>
+                                        <a class="dropdown-item" href="account-billing.html">Billing</a>
+                                        <a class="dropdown-item" href="account-notifications.html">Notifications</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="slice">
+            <div class="container">
+                <div class="row row-grid">
+                    <div class="col-lg-12">
+                        <!-- Change avatar -->
+                        <form>
+                            <!-- General -->
+
+                            <div class="page-inner-header mb-4">
+                                <h5 class="mb-1 text-info text-uppercase">Dados Econômicos</h5>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Número de Inscrição</label>
+                                        <input class="form-control" value="{{@SESSION.cnpj}}" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Situação Cadastral</label>
+                                        <input class="form-control" value="{{@situacao}}" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Data de Abertura</label>
+                                        <input class="form-control" value="{{@data_abertura}}" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Razão Social</label>
+                                        <input type="text" value="{{@razao_social}}" class="form-control" data-toggle="date">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Nome Fantasia</label>
+                                        <input type="text" value="{{@nome_fantasia}}" class="form-control" data-toggle="date">
+                                    </div>
+                                </div>
+                            </div>
+                    <check if="{{@CONSULTA_GRATIS != TRUE}}">
+                        <true>
+                            <div class="row align-items-center">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Tipo</label>
+                                        <input type="text" value="{{@tipo}}" class="form-control" data-toggle="date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Natureza Jurídica</label>
+                                        <input type="text" value="{{@natureza_juridica}}" class="form-control" data-toggle="date">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Porte</label>
+                                        <input type="text" value="{{@porte}}" class="form-control" data-toggle="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-control-label">CNAE Principal</label>
+                                        <input class="form-control" value="{{@cnae_principal}}" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Atividade Econômica Principal</label>
+                                        <input class="form-control" value="{{@atividade_principal}}" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-control-label">CNAE Secundário</label>
+                                        <input class="form-control" value="{{@cnae_secundaria}}" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Atividade Econômica Secundária</label>
+                                        <input class="form-control" value="{{@atividade_secundaria}}" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Motivo Situação</label>
+                                        <input class="form-control" value="{{@motivo_situacao}}" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Data da Situação Cadastral</label>
+                                        <input class="form-control" value="{{@data_situacao}}" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Data da Situação Especial</label>
+                                        <input class="form-control" value="{{@data_situacao_especial}}" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Última Atualização</label>
+                                        <input class="form-control" value="{{@ultima_atualizacao}}" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="pt-5 mt-5 delimiter-top">
+
+                                <div class="page-inner-header mb-4">
+                                    <h5 class="mb-1 text-info text-uppercase">Localização</h5>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Logradouro</label>
+                                            <input class="form-control" value="{{@logradouro}}" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Número</label>
+                                            <input class="form-control" value="{{@numero}}" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Complemento</label>
+                                            <input class="form-control" value="{{@complemento}}"type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label class="form-control-label">CEP</label>
+                                            <input class="form-control" value="{{@cep}}" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Bairro/Distrito</label>
+                                            <input class="form-control" value="{{@bairro}}" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Cidade</label>
+                                            <input class="form-control" value="{{@cidade}}" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <div class="form-group">
+                                            <label class="form-control-label">UF</label>
+                                            <input class="form-control" value="{{@uf}}" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Description -->
+                            <div class="pt-5 mt-5 delimiter-top">
+
+                                <div class="page-inner-header mb-4">
+                                    <h5 class="mb-1 text-info text-uppercase">Contato</h5>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Email</label>
+                                            <input class="form-control" value="{{@email}}" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Telefone</label>
+                                            <input class="form-control" value="{{@telefone}}" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Description -->
+                            <div class="pt-5 mt-5 delimiter-top">
+
+                                <div class="page-inner-header mb-4">
+                                    <h5 class="mb-1 text-info text-uppercase">Capital Social</h5>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Capital Social</label>
+                                            <input class="form-control" value="{{@capital_social}}" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Skills -->
+                            <div class="pt-5 mt-5 delimiter-top">
+
+                                <div class="page-inner-header mb-4">
+                                    <h5 class="mb-1 text-info text-uppercase">Quadro Societário</h5>
+                                </div>
+
+                                <div class="row">
+                                   
+
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Nome do Sócio</label>
+                                            <input class="form-control" value="{{@nome_socio}}" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Qualificação</label>
+                                            <input class="form-control" value="{{@qualificacao_socio}}" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </true>
+                    </check>
+                            <div class="pt-5 mt-5 delimiter-top">
+                                <p class="text-muted mb-0 text-center">Consulta realizada em <strong>{{@data}}</strong> ás <strong>{{@hora}}</strong>.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <check if="{{@CONSULTA_GRATIS == TRUE}}">
+            <true>
+                <!-- Call to action -->
+                <section class="slice slice-lg bg-dark">
+                    <span class="tongue tongue-top"><i class="far fa-angle-up"></i></span>
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-8 text-center">
+                                <h3 class="font-weight-400 text-white">Obtenha uma pesquisa completa, com dados e atividades econômicas, contato, capital social e quadro societário, adiquira a <span class="font-weight-700">Consulta Premium</span> .</h3>
+                                <div class="mt-5">
+                                    <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="btn btn-white btn-circle btn-translate--hover px-4">Contratar Agora<span class="badge badge-pill badge-danger text-sm">R$ 49,90 /mês</span></a>
+                                    <a href="mailto:support@webpixels.io" class="btn btn-link text-white">Alguma dúvida ?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </true>
+        </check>

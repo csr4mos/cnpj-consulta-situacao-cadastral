@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{@LANGUAGE}}">
+	<head>
+		<meta charset="{{@ENCODING}}">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="{{@metadescription}}">
+		<meta name="keywords" content="{{@metakeywords}}">
+		<meta name="author" content="{{@PACKAGE}} - {{@VERSION}}">
+		<title><check if="{{ @pageTitle != '' }}"><true>{{@pageTitle}} | {{@nameApp}}</true> <false>{{@nameApp}} &ndash; {{@tagLine}}</false></check></title>
+		<link rel="icon" href="{{@urlCDN}}front/img/brand/favicon.png" type="image/png"><!-- Favicon -->
+		<link href="{{@urlCDN}}dashboard/plugins/font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+		<link href="{{@urlCDN}}dashboard/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"> <!--load all styles -->
+		<link href="{{@urlCDN}}boomerang/assets/vendor/@fortawesome/fontawesome-pro/css/all.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="{{@urlCDN}}front/css/genezzis.min.css"><!-- Theme CSS -->
+		<link rel="stylesheet" href="{{@urlCDN}}front/css/btnTop.css"><!-- Botão Topo -->
+		<!-- Page plugins -->
+		<link type="text/css" href="{{@urlCDN}}front/vendor/swiper/dist/css/swiper.min.css" rel="stylesheet">
+		
+		<!-- Pagina Carrinho -->
+		<link type="text/css" href="{{@urlCDN}}front/vendor/select2/dist/css/select2.min.css" rel="stylesheet">
+		
+		<!-- Page plugins -->
+		<link type="text/css" href="{{@urlCDN}}front/vendor/%40fancyapps/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
+		
+		<!-- Pagina de Produtos -->
+		<link rel="stylesheet" href="{{@urlCDN}}front/vendor/animate.css/animate.min.css">
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800"><!-- Fonts -->
+
+		<!-- Docs CSS - No need to include these in your project -->
+		<link rel="stylesheet" href="{{@urlCDN}}front/vendor/jquery.scrollbar/jquery.scrollbar.css">
+		
+		<!-- Se JavaScript desabilitado -->
+		<noscript class="text-warning">
+			<h5 class="text-warning text-center">{{@TRANSLATE.alertDisabledJS}}</h5>
+		</noscript>
+	</head>
+	<body>
+		<header class="header-transparent" id="header-main">
+			<include href="front/layout/header.html" />
+		</header><!--./header-main-->
+		
+		<!--Main-->
+		<main>
+			<include href="{{ @view }}" />
+		</main><!--./main-->
+		
+		<!--Footer-->
+		<footer class="footer footer-dark bg-info">
+			<include href="front/layout/footer.html" />
+			
+		</footer><!--./footer-->
+		<button class="text-right" onclick="topFunction()" id="btnTop" title="{{@TRANSLATE.backToTop}}"><i class="fas fa-chevron-up"></i></button>
+		
+		<!--Javascript-->
+		<include href="front/layout/javascript.html" />
+		
+	</body>
+</html>

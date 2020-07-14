@@ -1,0 +1,75 @@
+        <div class="container h-100vh d-flex align-items-center">
+            <div class="col">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-5 col-xl-4">
+
+                        <div class="text-center mb-5">
+                            <h6 class="h3">Situação <strong>Cadastral</strong></h6>
+                            <p class="text-muted mb-0 text-uppercase text-sm">Cadastro Nacional da Pessoa Jurídica</p>
+                        </div>
+                        <span class="clearfix"></span>
+
+                        <div id="form-cnpj">
+                            <div class="form-group">
+                                <label class="form-control-label">Informe o CNPJ</label>
+                                <div class="input-group input-group-transparent">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-file-alt"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control input-mask"
+                                  data-mask="00.000.000/0000-00" name="cnpj" id="cnpj" placeholder="12.345.678/0009-10">
+                                </div>
+                            </div>
+                            
+                            <div class="text-center mb-3">
+                                <button type="submit" id="btn-new-account" class="btn btn-block btn-info">Consultar <i class="fas fa-search"></i></button>
+                            </div>
+                            {{@cnpj}}
+							<label class="text-info text-center text-sm">
+                                <div id="resposta"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<!-- jQuery and Bootstrap JS -->
+		<script src="{{@urlCDN}}jquery/1.12.4/jquery-1.12.4.min.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+			
+			//$(".sucesso").hide(); // Esconde a mensagem de sucesso
+			
+			$( "#btn-new-account" ).bind( "click", function() {
+			
+				$.ajax({
+					url: '{{@site.url}}/busca-cnpj' // destino				 
+					,data: $('#form-cnpj *').serialize()
+					,type:'POST'
+					,dataType: 'json'
+					,beforeSend: function(){	
+						$("#btn-new-account").html("Processando, aguarde ... <i class='far fa-spinner fa-spin'></i>"); // Exibe o spinner enquanto processa
+					}
+					,success: function(json){
+						if(json.status === 'Success'){
+							window.location.replace("{{@site.url}}/consulta-pessoa-juridica/cnpj/{{@SESSION.fCNPJ}}"); 
+							console.log(json);
+						} else {
+							$("#resposta").html(json.msg);
+							console.log(json);
+						}
+					}
+					,error: function(json){
+						$("#resposta").html(json.msg);
+						console.log(json);
+					}
+					,complete: function(json){
+						console.log(json);
+						$("#btn-new-account").html('Consultar <i class="fas fa-search"></i>'); // Retorna ao valor original do botão
+					}
+				}) // Finaliza o processamento do $.ajax();
+			}); // Finaliza o evento click do botão
+		}); // Finaliza o Javascript1
+		</script>
