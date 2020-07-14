@@ -21,7 +21,14 @@
 
 ## Prints
 
-![Print Cadastro de Clientes em C# - TCC de Cristiano Ramos na Alcides Maya Tecnologia - Ano de 2015]![alt text](https://raw.githubusercontent.com/csramos1980/tcc-alcides-maya/master/Print%20PFCShrap%20(1).jpg)
+> **CNPJ**
+![Consulta Simples - CNPJ]![alt text](https://raw.githubusercontent.com/CSR4mos/cnpj-consulta-situacao-cadastral/master/src/prints/01-print_consulta.png)
+
+> **Consulta Simples**
+![Consulta Simples - CNPJ]![alt text](https://raw.githubusercontent.com/CSR4mos/cnpj-consulta-situacao-cadastral/master/src/prints/01-print_consulta.png)
+
+> **Consulta Completa**
+![Consulta Simples - CNPJ]![alt text](https://raw.githubusercontent.com/CSR4mos/cnpj-consulta-situacao-cadastral/master/src/prints/01-print_consulta.png)
 
 ## Configuração para Desenvolvimento
 
