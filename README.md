@@ -17,7 +17,7 @@
 
 > * Para uso em **servidor local** - baixe o arquivo, descompacte e envie ou mova o conteúdo da pasta para o XAMPP, MAMP, LAMP ou WAMP, e acesse-o pelo seu navegador favorito .
 
-> * Para uso em **servidor online** - baixe o arquivo, envie o conteúdo da pasta para o seu servidor e descompacte-o em uma pasta ou subdomínio e acesse-o pelo seu navegador favorito .
+> * Para uso em **servidor online** - baixe o arquivo, envie-o para o seu servidor e descompacte-o em uma pasta ou subdomínio e acesse-o pelo seu navegador favorito .
 
 ## Prints
 
