@@ -36,8 +36,6 @@
 
 ## Licença
 
->O conteúdo desse projeto em si, é licenciado sob [Creative Commons Attribution 3.0 license](https://creativecommons.org/licenses/by/4.0/legalcode.pt), e o código resultante de qualquer modificação deve utilizar a mesma licença.
-
-> [CMS Genezzis]( https://genezzis.com/cms ), é marca registrada de [ Genezzis Sistemas]( https://genezzis.com/sistemas ), e seu uso é licenciado neste projeto nos termos da licença [Creative Commons Attribution 3.0 license](https://creativecommons.org/licenses/by/4.0/legalcode.pt)
+>[Creative Commons Attribution 3.0 license](https://creativecommons.org/licenses/by/4.0/legalcode.pt)
 
 > Fat Free Framework utiliza a licença [ GNU Public License ](http://www.gnu.org/licenses/gpl-3.0.html)
