@@ -15,12 +15,13 @@ class PaginasController extends Controller {
 	* Exibe a página : HOME
 	*/
     public function pageHome($genezzis){
-	
-		$geo = \Web\Geo::instance();
-		$location = $geo->location();
-		foreach($location as $key => $value){
-			if($key =='request'){ $this->genezzis->set('meuIP', $geoip = $value);}
-		}
+		
+	    	// GEOLOCALIZAÇÂO
+		//$geo = \Web\Geo::instance();
+		//$location = $geo->location();
+		//foreach($location as $key => $value){
+		//	if($key =='request'){ $this->genezzis->set('meuIP', $geoip = $value);}
+		//}
 
 		$this->genezzis->set('pageTitle', '');
 		$this->genezzis->set('view','front/index.html');
@@ -105,9 +106,9 @@ class PaginasController extends Controller {
 
     	$this->genezzis->set('data', date('d/m/Y'));
       	$this->genezzis->set('hora', date('H:i:s'));  	
-		$this->genezzis->set('pageTitle', '');
-		$this->genezzis->set('view','front/resultado.html');
-		echo Template::instance()->render('front/layout/layout.html');
+	$this->genezzis->set('pageTitle', '');
+	$this->genezzis->set('view','front/resultado.html');
+	echo Template::instance()->render('front/layout/layout.html');
     }
 
     /*
@@ -115,11 +116,12 @@ class PaginasController extends Controller {
 	*/
     public function acessoNegado($genezzis){
 	
-		$geo = \Web\Geo::instance();
-		$location = $geo->location();
-		foreach($location as $key => $value){
-			if($key =='request'){ $this->genezzis->set('meuIP', $geoip = $value);}
-		}
+		// GEOLOCALIZAÇÂO
+		//$geo = \Web\Geo::instance();
+		//$location = $geo->location();
+		//foreach($location as $key => $value){
+		//	if($key =='request'){ $this->genezzis->set('meuIP', $geoip = $value);}
+		//}
 
 		$this->genezzis->set('pageTitle', '');
 		$this->genezzis->set('view','errors/403.html');
