@@ -36,6 +36,6 @@
 
 ## Licença
 
->[Creative Commons Attribution 3.0 license](https://creativecommons.org/licenses/by/4.0/legalcode.pt)
+>[Creative Commons ― CC BY 3.0](https://creativecommons.org/licenses/by/3.0/deed.pt_BR)
 
 > Fat Free Framework utiliza a licença [ GNU Public License ](http://www.gnu.org/licenses/gpl-3.0.html)
