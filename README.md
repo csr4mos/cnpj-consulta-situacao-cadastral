@@ -24,12 +24,6 @@
 > **CNPJ**
 ![Consulta Simples - CNPJ]![alt text](https://raw.githubusercontent.com/CSR4mos/cnpj-consulta-situacao-cadastral/master/src/prints/01-print_consulta.png)
 
-> **Consulta Simples**
-![Consulta Simples - CNPJ]![alt text](https://github.com/CSR4mos/cnpj-consulta-situacao-cadastral/blob/master/src/prints/02-print_resultado_simples.png)
-
-> **Consulta Completa**
-![Consulta Simples - CNPJ]![alt text](https://raw.githubusercontent.com/CSR4mos/cnpj-consulta-situacao-cadastral/master/src/prints/03-print_resultado_completo.png)
-
 ## Configuração para Desenvolvimento
 
 > Utilize PHP Version 7.2.10
