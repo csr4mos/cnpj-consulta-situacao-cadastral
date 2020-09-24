@@ -13,7 +13,19 @@
 
 > * A **consulta completa**, além dos dados econômicos básicos, inclui : <br> - Tipo (Matriz / Filial);<br>- Natureza Jurídica; <br>- Código CNAE e Atividades Econômicas Primária e Secundária <br>- Localização<br>- Contatos<br>- Capital Social e<br>- Quadro Societário;
 
+## Pré requisitos
+
+* PHP Version >=7.2.10
+* libcurl
+* composer
+
 ## Instalação
+
+Instale pelo composer
+
+```
+$ composer require csr4mos/cnpj-consulta-situacao-cadastral
+```
 
 > * Para uso em **servidor local** - baixe o arquivo, descompacte e envie ou mova o conteúdo da pasta para o XAMPP, MAMP, LAMP ou WAMP, e acesse-o pelo seu navegador favorito .
 
@@ -23,10 +35,6 @@
 
 > **CNPJ**
 ![Consulta Simples - CNPJ]![alt text](https://raw.githubusercontent.com/CSR4mos/cnpj-consulta-situacao-cadastral/master/src/prints/01-print_consulta.png)
-
-## Configuração para Desenvolvimento
-
-> PHP Version >=7.2.10
 
 ## Licença
 
