@@ -27,7 +27,6 @@
 ## Configuração para Desenvolvimento
 
 > PHP Version >=7.2.10
-> Fat Free Framework >=3.7.2
 
 ## Licença
 
