@@ -1,7 +1,7 @@
 # CNPJ - Consulta Situação Cadastral
 >  Realiza uma consulta da situação cadastral de um CNPJ na RFB, usando a API [Receita WS]( https://receitaws.com.br/api ).
 
-> Neste projeto, disponibilizo uma versão light do módulo que originalmente desenvolvi para o [CMS Genezzis]( https://genezzis.com/cms ) <br>Este módulo realiza as seguintes operações :
+> Este módulo realiza as seguintes operações :
 
 > * Realiza validações do CNPJ com retorno em ajax 
 
