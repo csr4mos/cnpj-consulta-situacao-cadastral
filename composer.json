@@ -1,0 +1,26 @@
+{
+    "name": "csr4mos/cnpj-consulta-situacao-cadastral",
+	"description": "Sistema de Consulta Situação Cadastral - CNPJ",
+    "type": "library",
+    "homepage": "https://github.com/genezzis-sistemas",
+    "license": "GPL v3",
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "Cristiano Ramos",
+            "role": "Developer",
+            "email": "csramos.poa@gmail.com",
+            "homepage": "https://github.com/csr4mos"
+        }
+    ],
+	"config": {
+        "platform": {
+            "php": "7.1"
+        },
+        "vendor-dir": "core"
+    },
+    "require": {
+        "php": "7.1",
+        "bcosca/fatfree-core": "^3.6",
+    }
+}
