@@ -26,10 +26,9 @@
 
 ## Configuração para Desenvolvimento
 
-> Utilize PHP Version 7.2.10
+> PHP Version >=7.2.10
+> Fat Free Framework >=3.7.2
 
 ## Licença
 
->[Creative Commons ― CC BY 3.0](https://creativecommons.org/licenses/by/3.0/deed.pt_BR)
-
-> Fat Free Framework utiliza a licença [ GNU Public License ](http://www.gnu.org/licenses/gpl-3.0.html)
+> GPL v3 [ GNU Public License ](http://www.gnu.org/licenses/gpl-3.0.html)
