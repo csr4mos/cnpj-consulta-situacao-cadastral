@@ -1,19 +1,22 @@
 <?php
 /**
- * 	@description : Indice de Rotas CMS Genezzis
- * 	@package 	 : CMS Genezzis
- * 	@file 		 : /index.php
- * 	@author 	 : https://github.com/CSR4mos | <csramos.poa@gmail.com>
- * 	@version 	 : 0.0.0.1
- * 	@license	 : Todos os direitos reservados
- * 	@copyright	 : (c) 2018 - Genezzis Sistemas
- * 	@link 		 : https://genezzis.com | <sistemas@genezzis.com>
+ *  @package     : Consulta Situação Cadastral - CNPJ
+ *  @subpackage  : Arquivo de índice do sistema
+ *  @author      : Cristiano Ramos | https://github.com/CSR4mos | <csramos.poa@gmail.com>
+ *  @license     : GPL v3
+ *  @copyright   : (c) 2020 - Genezzis Sistemas - ME
+ *  @link        : http://genezzis.com | <sistemas@genezzis.com>
  *
- ****************************************************************************/
+ *****************************************************************************/
+
 
 	
-	// Configurações do Sistema
-	$genezzis=require('core/base.php'); // Inclui a base do Fat Free Framework
+	// Classes de Dependência
+	require_once('core/autoload.php');
+
+	// Instância do F3 Framework
+	$genezzis = \Base::instance();
+
 	ini_set ('display_errors', 1); 
 	$genezzis->config('config/config.ini');
 	$genezzis->config('config/routes.ini');
