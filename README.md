@@ -1,3 +1,4 @@
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=csr4mos)](https://github.com/anuraghazra/github-readme-stats)
 # CNPJ - Consulta Situação Cadastral
 >  Realiza uma consulta da situação cadastral de um CNPJ na RFB, usando a API [Receita WS]( https://receitaws.com.br/api ).
 
