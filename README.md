@@ -32,11 +32,6 @@ $ composer require csr4mos/cnpj-consulta-situacao-cadastral
 
 > * Para uso em **servidor online** - baixe o arquivo, envie-o para o seu servidor e descompacte-o em uma pasta ou subdomínio e acesse-o pelo seu navegador favorito .
 
-## Prints
-
-> **CNPJ**
-![Consulta Simples - CNPJ]![alt text](https://raw.githubusercontent.com/CSR4mos/cnpj-consulta-situacao-cadastral/master/src/prints/01-print_consulta.png)
-
 ## Licença
 
 > GPL v3 [ GNU Public License ](http://www.gnu.org/licenses/gpl-3.0.html)
