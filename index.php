@@ -20,25 +20,6 @@
 	ini_set ('display_errors', 1); 
 	$genezzis->config('config/config.ini');
 	$genezzis->config('config/routes.ini');
-
-	// Limpa uma sessão atual
-	//F3::clear('SESSION');
-	
-	/*
-	* Define o nível de Debug do sistema
-	*/
-	$genezzis->set('DEBUG',3);
-	
-	$getLang = new IdiomasController();
-	$getLang->getLang($genezzis);
-	
-	/*
-	* Define variáveis 
-	*/
-	$genezzis->set('site.url', $genezzis->get("SCHEME") . "://" . $genezzis->get("HOST") . $genezzis->get("BASE"));
-	
-	// SE exisir erro na rota - Exibe a Página de Erros
-	$genezzis->set('ONERROR','ErrosController->paginaErro');
 	
 	// Exibe o conteúdo
 	$genezzis->run();
