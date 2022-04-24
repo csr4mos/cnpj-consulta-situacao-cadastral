@@ -1,24 +1,8 @@
 # Regra para habilitar a reescrita de url's
 RewriteEngine On
 
-# Some servers require you to specify the `RewriteBase` directive
-# In such cases, it should be the path (relative to the document root)
-# containing this .htaccess file
-#
-# RewriteBase /
-
-# Regra para ocultar a visualização das pastas pela navegador
-RewriteRule ^(core|i18n|logs|tmp|temp)\/|\.ini$ - [R=403]
-
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L,QSA]
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
-
-RewriteRule ^sitemap\.xml$ sitemap/xml [L]
-
-# Regra para bloquear um detereminado IP
-#order allow,deny
-#allow from all
-#deny from ::1
