@@ -15,13 +15,6 @@ class PaginasController extends Controller {
 	* Exibe a página : HOME
 	*/
     public function pageHome($genezzis){
-		
-	    	// GEOLOCALIZAÇÂO
-		//$geo = \Web\Geo::instance();
-		//$location = $geo->location();
-		//foreach($location as $key => $value){
-		//	if($key =='request'){ $this->genezzis->set('meuIP', $geoip = $value);}
-		//}
 
 		$this->genezzis->set('pageTitle', '');
 		$this->genezzis->set('view','front/index.html');
@@ -115,13 +108,6 @@ class PaginasController extends Controller {
 	* Exibe a página : HOME
 	*/
     public function acessoNegado($genezzis){
-	
-		// GEOLOCALIZAÇÂO
-		//$geo = \Web\Geo::instance();
-		//$location = $geo->location();
-		//foreach($location as $key => $value){
-		//	if($key =='request'){ $this->genezzis->set('meuIP', $geoip = $value);}
-		//}
 
 		$this->genezzis->set('pageTitle', '');
 		$this->genezzis->set('view','errors/403.html');
